@@ -20,8 +20,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v5
-        with: $ {{ github.head_ref }}
-        
+        with: ${{ github.head_ref }}
+
       - name: Download image
         run: |
           mkdir -p data
