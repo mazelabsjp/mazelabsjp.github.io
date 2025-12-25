@@ -10,14 +10,18 @@ on:
     - cron: '0 */3 * * *'  # Every 3 hours
   workflow_dispatch:  # Allows manual triggering
 
+permissions:
+  contents: write # Permission to push commits to default token
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
     
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
-      
+        uses: actions/checkout@v5
+        with: $ {{ github.head_ref }}
+        
       - name: Download image
         run: |
           mkdir -p data
