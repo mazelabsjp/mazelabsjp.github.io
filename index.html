@@ -1,0 +1,21 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><title>redirect...</title><link rel="sitemap" href="/sitemap-index.xml"><meta name="generator" content="Astro v5.15.9"><link rel="alternate" hreflang="en-US" href="https://mazelabs.org/en/"><link rel="alternate" hreflang="ja" href="https://mazelabs.org/ja/"><!-- icon --><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="icon" sizes="192x192" href="/android-chrome.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><meta name="color-scheme" content="light dark"><!-- OGP --><meta property="og:type" content="website"><meta property="og:title" content="Mazelabs"><meta property="og:site_name" content="Mazelabs"><meta property="og:description" content="Mix"><meta property="og:image" content="https://mazelabs.org/ogp.png"><meta property="og:url" content="https://mazelabs.org/"><meta property="og:locale" content="en"><meta name="twitter:card" content="summary"><meta name="twitter:site" content><noscript><meta http-equiv="refresh" content="0;url=https://mazelabs.org/en/"></noscript><script>(function(){const langs = ["en","ja"];
+const baseUrl = "https://mazelabs.org/";
+const defaultLocale = "en";
+
+      if (
+        localStorage.selectedLang &&
+        langs.includes(localStorage.selectedLang)
+      ) {
+        location.href = `${baseUrl + localStorage.selectedLang}/`;
+      } else {
+        const browserLang = navigator.language.toLowerCase();
+
+        if (langs.includes(browserLang)) {
+          location.href = `${baseUrl + browserLang}/`;
+        } else if (langs.includes(browserLang.split("-")[0])) {
+          location.href = `${baseUrl + browserLang.split("-")[0]}/`;
+        } else {
+          location.href = `${baseUrl + defaultLocale}/`;
+        }
+      }
+    })();</script></head> <body> <h1>redirect...</h1> </body></html>

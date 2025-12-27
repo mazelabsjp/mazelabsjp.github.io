@@ -1,0 +1,68 @@
+<!DOCTYPE html><!--
+
+  Source Code:
+  https://github.com/psephopaiktes/astro-i18n-starter
+
+--><html lang="ja"> <head><meta charset="UTF-8"><title>Monolingual Page - Mazelabs</title><meta name="description" content="まぜまぜまぜ"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="sitemap" href="/sitemap-index.xml"><meta name="generator" content="Astro v5.15.9"><link rel="alternate" hreflang="en-US" href="https://mazelabs.org/en/monolingual/"><link rel="alternate" hreflang="ja" href="https://mazelabs.org/ja/monolingual/"><!-- icon --><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="icon alternate" sizes="64x64" type="image/png" href="/favicon.png"><link rel="icon" sizes="192x192" href="/android-chrome.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><meta name="color-scheme" content="light dark"><!-- OGP --><meta property="og:type" content="website"><meta property="og:title" content="Monolingual Page - Mazelabs"><meta property="og:site_name" content="Monolingual Page - Mazelabs"><meta property="og:description" content="まぜまぜまぜ"><meta property="og:image" content="https://mazelabs.org/ogp.png"><meta property="og:url" content="https://mazelabs.org/ja/monolingual/"><meta property="og:locale" content="ja"><meta name="twitter:card" content="summary"><meta name="twitter:site" content><!-- External Resource --><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preload" as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;800&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;800&display=swap" media="print" onload="this.media='all'"><link rel="preload" as="style" fetchpriority="high" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp&display=swap" media="print" onload="this.media='all'"><link rel="preload" as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;800&display=swap">
+    <link rel="stylesheet" media="print" onload="this.media='all'" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;800&display=swap">
+    <style>body{ font-family: "Noto Sans JP", sans-serif; }</style><style>header[data-astro-cid-ql4jah75]{position:relative;overflow:hidden;padding-block:var(--sp-l);padding-inline:var(--sp-s);text-align:center;border-radius:16px;color:var(--color-theme);background-color:color-mix(in srgb,var(--color-accent) 10%,transparent);@media(width<768px){margin-inline:calc(50% - 50vw);border-radius:0}&[data-astro-cid-ql4jah75]:before,&[data-astro-cid-ql4jah75]:after{content:"";position:absolute;pointer-events:none;background:var(--color-theme);z-index:-1;opacity:.1;height:60%;aspect-ratio:1;filter:blur(32px)}&[data-astro-cid-ql4jah75]:before{inset:0 0 auto auto;clip-path:polygon(0 0,100% 0,100% 100%)}&[data-astro-cid-ql4jah75]:after{inset:auto auto 0 0;clip-path:polygon(0 0,100% 100%,0 100%)}h1{font-size:1.6rem;letter-spacing:.05em}}
+p[data-astro-cid-mw3zkypn]{padding:.5em;margin-block:var(--sp-m);color:var(--color-base);font-weight:600;letter-spacing:.01em;font-size:1.2em;background:var(--color-caution);border-radius:6px}span[data-astro-cid-mw3zkypn]{margin-inline-end:.5em;vertical-align:middle;opacity:.8}
+</style>
+<link rel="stylesheet" href="/_astro/_id_.CnEGaKg5.css"></head> <body> <div id="js-languageSuggest" data-astro-cid-onlux7ho> <a id="js-link" href="#" data-astro-cid-onlux7ho> <span class="material-icons-sharp" data-astro-cid-onlux7ho>autorenew</span> <span id="js-linkText" data-astro-cid-onlux7ho></span> </a> <button id="js-close" data-astro-cid-onlux7ho> <span class="material-icons-sharp" data-astro-cid-onlux7ho>close</span> </button> </div> <script>(function(){const currentLocale = "ja";
+const LOCALES = {"en":{"label":"English","lang":"en-US"},"ja":{"label":"日本語"}};
+
+  const browserLang = navigator.language.toLowerCase();
+  const suggest = document.getElementById("js-languageSuggest");
+
+  const showSuggest = (lang) => {
+    const pathnames = location.pathname.split("/");
+    const link = document.getElementById("js-link");
+    const linkText = document.getElementById("js-linkText");
+
+    pathnames[1] = lang;
+    link.href = pathnames.join("/");
+    linkText.innerText = LOCALES[lang].label;
+    suggest.style.display = "block";
+  };
+
+  if (
+    currentLocale === browserLang ||
+    currentLocale === browserLang.split("-")[0] ||
+    localStorage.languageSuggestDenied ||
+    localStorage.selectedLang
+  ) {
+    return;
+  } else if (Object.keys(LOCALES).includes(browserLang)) {
+    showSuggest(browserLang);
+  } else if (Object.keys(LOCALES).includes(browserLang.split("-")[0])) {
+    showSuggest(browserLang.split("-")[0]);
+  }
+
+  document.getElementById("js-close").addEventListener("click", () => {
+    suggest.style.display = "none";
+    localStorage.languageSuggestDenied = true;
+  });
+})();</script>  <header class="l-header" data-astro-cid-3ef6ksr2> <h1 dir="ltr" data-astro-cid-3ef6ksr2> <a href="/ja/" data-astro-cid-3ef6ksr2>
+Mazelabs
+</a> </h1> <label data-astro-cid-opxux4jt> <span class="material-icons-sharp" data-astro-cid-opxux4jt>translate</span> <select data-languageSelect data-astro-cid-opxux4jt> <option label="English" value="/en/monolingual/" data-lang="en" data-astro-cid-opxux4jt></option><option label="日本語" value="/ja/monolingual/" data-lang="ja" selected data-astro-cid-opxux4jt></option> </select> <span class="material-icons-sharp" data-astro-cid-opxux4jt>expand_more</span> </label> <script>
+  const selects = document.querySelectorAll("[data-languageSelect]");
+
+  selects.forEach((select) => {
+    select.addEventListener("change", (event) => {
+      // used for 404 page
+      localStorage.selectedLang = event.target?.selectedOptions[0].dataset.lang;
+      location.href = event.target?.value;
+    });
+  });
+</script>  <nav class="l-content" data-astro-cid-3ef6ksr2> <ul data-astro-cid-3ef6ksr2> <li data-astro-cid-3ef6ksr2> <a href="/ja/setup/" data-astro-cid-3ef6ksr2> 設定 </a> </li> <li data-astro-cid-3ef6ksr2> <a href="/ja/page/" data-astro-cid-3ef6ksr2> ページの追加 </a> </li> <li data-astro-cid-3ef6ksr2> <a href="/ja/feature/" data-astro-cid-3ef6ksr2> その他の機能 </a> </li> <li class="en-only" data-astro-cid-3ef6ksr2> <a href="/ja/monolingual/" class="active" data-astro-cid-3ef6ksr2>
+Monolingual
+</a> </li> <li data-astro-cid-3ef6ksr2> <a href="/ja/blog/" data-astro-cid-3ef6ksr2> ブログ </a> </li> <li data-astro-cid-3ef6ksr2></li> </ul> </nav> </header>  <main class="l-main l-content">  <p data-astro-cid-mw3zkypn><span class="material-icons-sharp" data-astro-cid-mw3zkypn>warning</span>このページはご利用の言語でご覧いただけません。</p> <header data-astro-cid-ql4jah75> <h1 data-astro-cid-ql4jah75>Monolingual Page</h1>  </header>  <p>Here is a sample page when only one language is set.</p> <p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>  </main> <footer class="l-footer l-content" data-astro-cid-sz7xmlte> <a href="https://github.com/psephopaiktes/astro-i18n-starter" target="_blank" class="github" data-astro-cid-sz7xmlte>
+Astro-i18n-starter (GitHub)
+<span class="material-icons-sharp dir" data-astro-cid-sz7xmlte>open_in_new</span> </a> <ul data-astro-cid-sz7xmlte> <li><a href="/en/" onclick="localStorage.selectedLang = &#34;en&#34;" lang="en">English</a></li><li><a href="/ja/" onclick="localStorage.selectedLang = &#34;ja&#34;" lang="ja">日本語</a></li> </ul> </footer>   </body> </html>
